@@ -9,4 +9,4 @@
   console.log(`get(url) - ${getdata.date} ${getdata.time} - ok`)
 
   process.exit(0) 
-})().catch(console.error)
+})().catch(e=>{console.error(e); process.exit(1)})
