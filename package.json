@@ -1,9 +1,8 @@
 {
   "name": "learn-ci",
   "version": "0.1.0",
-  "description": "A sample CI",
+  "description": "A sample Travis CI project",
   "dependencies": {
-    "chrome-remote-interface": "",
-    "node-fetch": ""
+    "testchrome": "*"
   }
 }
