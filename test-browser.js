@@ -26,9 +26,10 @@ console.log(`Browser?${isBrowser}`, platform)
 
   const page = await testpage('https://google.com')
   const loc = await page.eval('location.href')
-  console.log(`Location href is ${loc}`)
 
   const html = await page.html()
+    console.log(html)
+
   const e = await page.eval('1+1')
   const head = html.substring(0, 6)
   console.log(e==2 ? `1 + 1 = ${e} - ok`:`Error cannot eval JS`)
