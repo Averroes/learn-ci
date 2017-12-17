@@ -1,7 +1,9 @@
 language: node_js
 node_js:
  - "node"
-script: node test.js
+script: 
+ - node test-server.js
+ - node test-browser.js
 dist: trusty
 addons:
   chrome: stable
