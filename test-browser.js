@@ -25,6 +25,9 @@ console.log(`Browser?${isBrowser}`, platform)
   console.log(`loaded testpage ${typeof testpage} - ok`)
 
   const page = await testpage('https://google.com')
+  const loc = await page.eval('location.href')
+  console.log(`Location href is ${loc}`)
+
   const html = await page.html()
   const e = await page.eval('1+1')
   const head = html.substring(0, 6)
