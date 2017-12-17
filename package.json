@@ -1,0 +1,9 @@
+{
+  "name": "learn-ci",
+  "version": "0.1.0",
+  "description": "A sample CI",
+  "dependencies": {
+    "chrome-remote-interface": "",
+    "node-fetch": ""
+  }
+}
