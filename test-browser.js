@@ -1,4 +1,5 @@
-(async ()=>{
+try {
+ (async ()=>{
   console.log(`Attempting a simple test`)
   
   const page = await require('testchrome')('https://google.com')
@@ -9,4 +10,7 @@
   console.log(`get(url) - ${getdata.date} ${getdata.time} - ok`)
 
   process.exit(0) 
-})()
+ })()
+} catch(e) {
+   process.exit(1) 
+}
