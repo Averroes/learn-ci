@@ -4,5 +4,6 @@
   "description": "A sample Travis CI project",
   "dependencies": {
     "testchrome": "*"
-  }
+  },
+  "main": "main.js"
 }
